@@ -1,9 +1,9 @@
-import React from 'react'
+import { UserRoundPlusIcon } from "lucide-react";
 
-function NewUser() {
+export default function NewUser({ name }) {
   return (
-    <div>NewUser</div>
-  )
+    <div className="flex items-end gap-1 text-gray-800">
+      <UserRoundPlusIcon /> {name} just joined
+    </div>
+  );
 }
-
-export default NewUser
